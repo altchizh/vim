@@ -1,0 +1,9 @@
+[submodule "pack/plugins/start/vim-go"]
+	path = pack/plugins/start/vim-go
+	url = https://github.com/fatih/vim-go.git
+[submodule "pack/plugins/start/nerdtree"]
+	path = pack/plugins/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/plugins/start/ayu"]
+	path = pack/plugins/start/ayu
+	url = https://github.com/ayu-theme/ayu-vim.git
