@@ -14,3 +14,4 @@ set cursorline
 let mapleader = " "
 
 "au filetype go inoremap <buffer> . .<C-x><C-o>
+:map <Leader>g :NERDTreeToggle<CR>
