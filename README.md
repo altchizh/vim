@@ -37,8 +37,4 @@ go build
 vim
 :helptags ALL
 ```
-5. Install `go` binaries for `vim-go`
-```
-:GoInstallBinaries
-```
 
