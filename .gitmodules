@@ -7,3 +7,6 @@
 [submodule "pack/plugins/start/ayu"]
 	path = pack/plugins/start/ayu
 	url = https://github.com/ayu-theme/ayu-vim.git
+[submodule "pack/plugins/start/YouCompleteMe"]
+	path = pack/plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git

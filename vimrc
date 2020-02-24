@@ -1,4 +1,5 @@
-filetype plugin indent on
+set nocompatible              " be iMproved, required
+filetype plugin indent on    " required
 set backspace=indent,eol,start
 syntax on 
 set encoding=utf-8
