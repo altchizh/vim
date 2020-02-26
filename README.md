@@ -37,4 +37,9 @@ go build
 vim
 :helptags ALL
 ```
-
+5. Install fzf
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+export PATH=$PATH:~/.fzf/bin
+```

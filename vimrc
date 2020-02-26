@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
+set rtp+=~/.fzf
 filetype plugin indent on    " required
 set backspace=indent,eol,start
+set rtp+=~/.fzf
 syntax on 
 set encoding=utf-8
 set clipboard=unnamedplus
