@@ -19,4 +19,5 @@ let mapleader = " "
 "au filetype go inoremap <buffer> . .<C-x><C-o>
 :nnoremap <Leader>g :NERDTreeToggle<CR>
 :nnoremap <Leader>j :YcmCompleter GoTo<CR>
+:nnoremap <Leader>t :YcmCompleter GetType<CR>
 
