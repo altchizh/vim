@@ -52,4 +52,8 @@ To fix import pylint import errors
 ```
 export PYTHONPATH="${PYTHONPATH}:/home/ubuntu/ml" 
 ```
+To use yapf as ALEFixer, we need to copy .style.yapf to the project directory.
+```
+cp ~/.vim/.style.yapf ~/ml
+```
 

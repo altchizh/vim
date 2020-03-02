@@ -28,13 +28,12 @@ let g:ale_linters = {
     \   'python': ['pylint'],
     \}
 let g:ale_fixers = {
-    \   'python': ['autopep8'],
+    \   'python': ['yapf'],
     \}
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
 " Indent string is two spaces
 let g:ale_python_pylint_options = '--indent-string="  "'
-let g:ale_python_yapf_options = '--style="{indent_width: 2}"'
 
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
@@ -46,6 +45,7 @@ command! -bang -nargs=* GGrep
 :nnoremap <Leader>j :YcmCompleter GoTo<CR>
 :nnoremap <Leader>t :YcmCompleter GetType<CR>
 :nnoremap <Leader>f :GGrep<CR>
+:nnoremap <Leader>= :ALEFix<CR>
 
 " Put these lines at the very end of your vimrc file.
 " Load all plugins now.
