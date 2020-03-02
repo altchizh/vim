@@ -43,3 +43,13 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 source ~/.bashrc
 ```
+6. Install necessay linters and fixers for ALE
+For python
+```
+python3 -m pip install pylint yapf
+```
+To fix import pylint import errors
+```
+export PYTHONPATH="${PYTHONPATH}:/home/ubuntu/ml" 
+```
+
