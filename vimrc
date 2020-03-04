@@ -26,9 +26,11 @@ au BufNewFile,BufRead *.py
 
 let g:ale_linters = {
     \   'python': ['pylint'],
+    \   'go': ['golint'],
     \}
 let g:ale_fixers = {
     \   'python': ['yapf'],
+    \   'go': ['gofmt'],
     \}
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
