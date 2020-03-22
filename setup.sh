@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 cd ~
-git clone --recursive https://github.com/altchizh/vim.git
 
 ln -sf vim ~/.vim
 ln -sf vim/vimrc ~/.vimrc
