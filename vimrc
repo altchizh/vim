@@ -8,10 +8,9 @@ set clipboard=unnamedplus
 set number
 let mapleader = " "
 set termguicolors
-"let ayucolor="light"  " for light version of theme
-"let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+colorscheme gruvbox
+set background=dark    " Setting dark mode
+"set background=light   " Setting light mode
 set cursorline
 let mapleader = " "
 
