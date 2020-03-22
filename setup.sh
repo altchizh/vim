@@ -24,7 +24,7 @@ cd ~/.vim/pack/plugins/start/YouCompleteMe/third_party/ycmd/third_party/go/src/g
 go build
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+~/.fzf/install --all
 source ~/.bashrc
 
 python3 -m pip install pylint yapf
