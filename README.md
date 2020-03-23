@@ -56,4 +56,11 @@ To use yapf as ALEFixer, we need to copy .style.yapf to the project directory.
 ```
 cp ~/.vim/.style.yapf ~/ml
 ```
-
+VI binds for Shell (useful when editing a command)
+```
+set -o vi
+```
+Use vim as a default editor (ex. git)
+```
+export EDITOR=vim
+```
