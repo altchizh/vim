@@ -56,11 +56,23 @@ To use yapf as ALEFixer, we need to copy .style.yapf to the project directory.
 ```
 cp ~/.vim/.style.yapf ~/ml
 ```
-VI binds for Shell (useful when editing a command)
+## Useful tips
+1. VI binds for Shell (useful when editing a command)
 ```
 set -o vi
 ```
-Use vim as a default editor (ex. git)
+2. Use vim as a default editor (ex. git)
 ```
 export EDITOR=vim
 ```
+3. In case of colorscheme problems when running in tmux:
+3.1 Set up alias in `~/.bashrc`:
+```
+alias tmux="TERM=screen-256color-bce tmux"
+```
+3.2 And set up the `default-terminal` option in `~/.tmux.conf`:
+```
+set -g default-terminal "xterm"
+```
+3.3 Lastly, do `$ source ~/.bashrc` to load new alias
+
