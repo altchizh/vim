@@ -15,7 +15,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 source ~/.bashrc
 ```
-4. Install necessay linters and fixers for ALE
+4. Install necessary linters and fixers for ALE
 For python
 ```
 python3 -m pip install pylint yapf
@@ -27,6 +27,17 @@ export PYTHONPATH="${PYTHONPATH}:/home/ubuntu/ml"
 To use yapf as ALEFixer, we need to copy .style.yapf to the project directory.
 ```
 cp ~/.vim/.style.yapf ~/ml
+```
+For go
+```
+go get -u golang.org/x/tools/gopls
+go get -u golang.org/x/lint/golint
+go get -u golang.org/x/tools/cmd/goimports
+```
+5. To install go binaries for vim-go run inside of Vim:
+```
+:GoInstallBinaries
+:helptags ALL
 ```
 ## Useful tips
 1. VI binds for Shell (useful when editing a command)

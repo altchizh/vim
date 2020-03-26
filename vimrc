@@ -28,7 +28,7 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
-set mouse+=a
+"set mouse+=a
 
 set encoding=utf-8
 set clipboard=unnamedplus
@@ -51,11 +51,11 @@ au BufNewFile,BufRead *.py
 
 let g:ale_linters = {
     \   'python': ['pylint'],
-    \   'go': ['golint'],
+    \   'go': ['gopls', 'golint'],
     \}
 let g:ale_fixers = {
     \   'python': ['yapf'],
-    \   'go': ['gofmt'],
+    \   'go': ['goimports'],
     \}
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
@@ -69,6 +69,7 @@ command! -bang -nargs=* GGrep
 
 "au filetype go inoremap <buffer> . .<C-x><C-o>
 :nnoremap <Leader>g :NERDTreeToggle<CR>
+:nnoremap <Leader>j :ALEGoToDefinition<CR>
 :nnoremap <Leader>f :GGrep<CR>
 :nnoremap <Leader>= :ALEFix<CR>
 
