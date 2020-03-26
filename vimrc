@@ -49,6 +49,17 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
+" Default vim completion
+" set omnifunc=syntaxcomplete#Complete
+
+" Use ALE for completion
+" You should not turn this setting on if you wish to use ALE as a completion
+" source for other completion plugins, like Deoplete.
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+
+set completeopt=menuone,preview,noinsert,noselect
+
 let g:ale_linters = {
     \   'python': ['pylint'],
     \   'go': ['gopls', 'golint'],
@@ -61,6 +72,9 @@ let g:ale_fixers = {
 let g:ale_linters_explicit = 1
 " Indent string is two spaces
 let g:ale_python_pylint_options = '--indent-string="  "'
+" Lint only when saved
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
 
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
@@ -70,6 +84,7 @@ command! -bang -nargs=* GGrep
 "au filetype go inoremap <buffer> . .<C-x><C-o>
 :nnoremap <Leader>g :NERDTreeToggle<CR>
 :nnoremap <Leader>j :ALEGoToDefinition<CR>
+:nnoremap <Leader>r :ALEFindReferences<CR>
 :nnoremap <Leader>f :GGrep<CR>
 :nnoremap <Leader>= :ALEFix<CR>
 
