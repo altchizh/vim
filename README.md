@@ -34,11 +34,6 @@ go get -u golang.org/x/tools/gopls
 go get -u golang.org/x/lint/golint
 go get -u golang.org/x/tools/cmd/goimports
 ```
-5. To install go binaries for vim-go run inside of Vim:
-```
-:GoInstallBinaries
-:helptags ALL
-```
 ## Useful tips
 1. VI binds for Shell (useful when editing a command)
 ```
