@@ -58,6 +58,8 @@ command! -bang -nargs=* GGrep
 :nnoremap <Leader>g :NERDTreeToggle<CR>
 :nnoremap <Leader>j :YcmCompleter GoTo<CR>
 :nnoremap <Leader>t :YcmCompleter GetType<CR>
+:nnoremap <Leader>= :YcmCompleter Format<CR>
+:nnoremap <Leader>r :YcmCompleter GoToReferences<CR>
 :nnoremap <Leader>f :GGrep<CR>
 
 " Put these lines at the very end of your vimrc file.
