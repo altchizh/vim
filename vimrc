@@ -28,7 +28,7 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
-set mouse+=a
+"set mouse+=a
 
 set encoding=utf-8
 set clipboard=unnamedplus
@@ -49,19 +49,6 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
-let g:ale_linters = {
-    \   'python': ['pylint'],
-    \   'go': ['golint'],
-    \}
-let g:ale_fixers = {
-    \   'python': ['yapf'],
-    \   'go': ['gofmt'],
-    \}
-" Only run linters named in ale_linters settings.
-let g:ale_linters_explicit = 1
-" Indent string is two spaces
-let g:ale_python_pylint_options = '--indent-string="  "'
-
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
@@ -72,7 +59,6 @@ command! -bang -nargs=* GGrep
 :nnoremap <Leader>j :YcmCompleter GoTo<CR>
 :nnoremap <Leader>t :YcmCompleter GetType<CR>
 :nnoremap <Leader>f :GGrep<CR>
-:nnoremap <Leader>= :ALEFix<CR>
 
 " Put these lines at the very end of your vimrc file.
 " Load all plugins now.
